@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Kokos Code Team",
+    "classifications": [ "Common", "Code", "WebApi" ],
+    "identity": "DotNet.WedApi.Service",
+    "name": "Template for create classic WebApi app",
+    "shortName": "webapiservice",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    }
+  }
