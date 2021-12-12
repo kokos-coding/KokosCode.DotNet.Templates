@@ -1,6 +1,6 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "Kokos Code TEam",
+  "author": "Kokos Code Team",
   "classifications": [ "WebApi", "Service" ], 
   "name": "Kokos Code WebApi service",
   "identity": "KokosCode.DotNet.WebApi",         
@@ -13,20 +13,28 @@
   "preferNameDirectory": true,
   "sourceName": "DotNet.WebApi",
   "symbols":{
-    "CopyrightName": {
-      "type": "parameter",
-      "defaultValue": "(c) Contoso",
-      "replaces":"(copyright)"
+    "Swagger":{
+      "type":"parameter",
+      "datatype": "bool",
+      "description": "Enable Swagger support",
+      "defaultValue":"true"
     },
-    "Title": {
-      "type": "parameter",
-      "defaultValue": "Contoso Sample",
-      "replaces":"My App Title"
-    },
-    "EnableContactPage":{
-      "type": "parameter",
-      "dataType":"bool",
-      "defaultValue": "false"
+    "DotNetVersion":{
+      "type":"parameter",
+      "datatype": "choice",
+      "description": "Select dotnet version",
+      "defaultValue":"6.0",
+      "choices": [
+        {
+          "choice": "6.0",
+          "description": ".Net 6"
+        },
+        {
+          "choice": "5.0",
+          "description": ".Net 6"
+        }
+      ],
+      "replaces": "(DotNetVersion)"
     },
     "ORM":{
       "type":"parameter",
@@ -42,20 +50,12 @@
           "choice": "Dapper",
           "description": "Connect Dapper as main ORM system"
         }
-      ],
-      "replaces":"skyblue"
+      ]
     }
   },
 "sources": [
     {
-      "modifiers": [
-        {
-          "condition": "(!EnableContactPage)",
-          "exclude": [
-            "contact.txt"
-          ]
-        }
-      ]
+      
     }
   ]
 }

@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -9,5 +8,17 @@
   <ItemGroup>
     <ProjectReference Include="../DotNet.WebApi.Domain/DotNet.WebApi.Domain.csproj" />
   </ItemGroup>
+
+ <ItemGroup>
+ </ItemGroup>
+
+ <ItemGroup>
+<!-- #if(DotNetVersion='6.0') -->
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.1" />
+<!-- #endif -->
+<!-- #if(DotNetVersion='5.0') -->
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.10" />
+<!-- #endif -->
+ </ItemGroup>
 
 </Project>
