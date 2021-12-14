@@ -13,7 +13,7 @@
   "preferNameDirectory": true,
   "sourceName": "DotNet.WebApi",
   "symbols":{
-    "Swagger":{
+    "useSwagger":{
       "type":"parameter",
       "datatype": "bool",
       "description": "Enable Swagger support",

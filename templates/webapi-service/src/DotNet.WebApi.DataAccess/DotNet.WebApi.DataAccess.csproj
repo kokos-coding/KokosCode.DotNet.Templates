@@ -13,12 +13,8 @@
  </ItemGroup>
 
  <ItemGroup>
-<!-- #if(DotNetVersion='6.0') -->
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.1" />
-<!-- #endif -->
-<!-- #if(DotNetVersion='5.0') -->
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.10" />
-<!-- #endif -->
+    <PackageReference Condition="'$(DotNetVersion)'=='6.0')" Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.1" />
+    <PackageReference Condition="'$(DotNetVersion)'=='5.0')" Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.10" />
  </ItemGroup>
 
 </Project>

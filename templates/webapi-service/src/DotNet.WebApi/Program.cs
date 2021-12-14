@@ -1,6 +1,32 @@
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
-app.MapGet("/", () => "Hello World!");
+namespace DotNet.WebApi
+{
+    /// <summary>
+    /// Program class. Service entrypoint 
+    /// </summary>
+    public class Program
+    {
+        /// <summary>
+        /// Main method. Service entrypoint 
+        /// </summary>
+        public static Task Main(string[] args) =>
+            CreateHostBuilder(args)
+                .Build()
+                .RunAsync();
 
-app.Run();
+        /// <summary>
+        /// Program class. Service entrypoint 
+        /// </summary>
+        public static IHostBuilder CreateHostBuilder(string[] args)
+        {
+            return Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); });
+        }
+    }
+}
+
+

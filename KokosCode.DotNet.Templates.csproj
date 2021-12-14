@@ -8,8 +8,9 @@
     <Authors>Kokos Code Team</Authors>
     <Description>Templates to create DotNet Apps and projects from Kokos Code Team.</Description>
     <PackageTags>dotnet-new;templates</PackageTags>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
 
-    <TargetFramework>net5.0;net6.0</TargetFramework>
+    <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
 
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
