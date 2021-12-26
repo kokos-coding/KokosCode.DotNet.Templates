@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KokosCode.DotNet.Templates", "KokosCode.DotNet.Templates.csproj", "{DF3EAD6C-120F-4BA5-B912-74001EC840FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{D756DF80-6659-11EC-AAC7-0320F6CEE413}"
+ProjectSection(SolutionItems) = preProject
+	.gitignore = .gitignore
+	Directory.Build.props = Directory.Build.props
+	Directory.Build.targets = Directory.Build.targets
+	README.md = README.md
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{E1920B50-6659-11EC-AAC7-0320F6CEE413}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		DebugForNugetPackages|Any CPU = DebugForNugetPackages|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF3EAD6C-120F-4BA5-B912-74001EC840FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF3EAD6C-120F-4BA5-B912-74001EC840FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF3EAD6C-120F-4BA5-B912-74001EC840FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF3EAD6C-120F-4BA5-B912-74001EC840FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF3EAD6C-120F-4BA5-B912-74001EC840FD}.DebugForNugetPackages|Any CPU.ActiveCfg = DebugForNugetPackages|Any CPU
+		{DF3EAD6C-120F-4BA5-B912-74001EC840FD}.DebugForNugetPackages|Any CPU.Build.0 = DebugForNugetPackages|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DF3EAD6C-120F-4BA5-B912-74001EC840FD} = {E1920B50-6659-11EC-AAC7-0320F6CEE413}
+	EndGlobalSection
+EndGlobal

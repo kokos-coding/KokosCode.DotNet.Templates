@@ -2,7 +2,10 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>0.0.1</PackageVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+   <IsPackable>true</IsPackable>
+    <LangVersion>latest</LangVersion>
+    <Version>$(NugetPackageVersion)</Version>
     <PackageId>KokosCode.DotNet.Templates</PackageId>
     <Title>Kokos Code Templates</Title>
     <Authors>Kokos Code Team</Authors>

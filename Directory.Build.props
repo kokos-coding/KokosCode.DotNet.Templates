@@ -1,0 +1,11 @@
+<Project>
+
+<Target Name="DisplayMessage">
+            <Message Text="UserProfile: $(UserProfile)" Importance="High" />
+        </Target>
+    <PropertyGroup>
+        <NugetPackageVersion>0.0.1</NugetPackageVersion>
+        <LocalNugetFolder Condition="'$(OS)' != 'Windows_NT'">C:\LocalNugetStore\$(SolutionName)</LocalNugetFolder>
+        <LocalNugetFolder Condition="'$(OS)' != 'Linux'">$(Home)\LocalNugetStore\$(SolutionName)</LocalNugetFolder>
+    </PropertyGroup>
+</Project>
