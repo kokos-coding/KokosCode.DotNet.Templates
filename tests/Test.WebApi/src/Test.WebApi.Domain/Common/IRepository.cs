@@ -1,6 +1,6 @@
-using DotNet.WebApi.Domain.Models.Common.Abstractions;
+using Test.WebApi.Domain.Models.Common.Abstractions;
 
-namespace DotNet.WebApi.Domain.Common
+namespace Test.WebApi.Domain.Common
 {
     public interface IRepository<TEntity, TKey>
         where TEntity : class, IIdModel<TKey>

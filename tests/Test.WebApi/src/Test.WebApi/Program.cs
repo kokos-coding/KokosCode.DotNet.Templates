@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace DotNet.WebApi
+namespace Test.WebApi
 {
     /// <summary>
     /// Program class. Service entrypoint 

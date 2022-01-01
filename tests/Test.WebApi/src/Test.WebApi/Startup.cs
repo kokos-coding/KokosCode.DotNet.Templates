@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace DotNet.WebApi
+namespace Test.WebApi
 {
     /// <summary>
     /// Startup class. Service entrypoint
@@ -30,9 +30,7 @@ namespace DotNet.WebApi
         {
             services.AddCustomOptions(Configuration)
                 .AddApplicationServices()
-#if(use-swagger)
                 .AddSwaggerServices()
-#endif
                 .AddMappers();
 
             services.AddControllers();
@@ -56,9 +54,7 @@ namespace DotNet.WebApi
                 app.UseHsts();
             }
 
-#if(use-swagger)
             app.UseSwaggerServices();
-#endif
 
             app.UseHttpsRedirection();
             app.UseRouting();

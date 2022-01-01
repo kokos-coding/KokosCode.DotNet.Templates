@@ -13,11 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{D756DF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7AA8BE7B-E296-42D8-BB58-41D53CEC63CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.WebApi", "src\DotNet.WebApi\DotNet.WebApi.csproj", "{C3A0768E-755E-4574-B382-0727B6880CEE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.WebApi", "src\Test.WebApi\Test.WebApi.csproj", "{C3A0768E-755E-4574-B382-0727B6880CEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.WebApi.Domain", "src\DotNet.WebApi.Domain\DotNet.WebApi.Domain.csproj", "{3C485333-1EF7-4441-A3B7-1CA33FC95A4A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.WebApi.ApplicationServices", "src\DotNet.WebApi.ApplicationServices\DotNet.WebApi.ApplicationServices.csproj", "{0FA0C7B3-F590-46A5-9593-E7FF80CDF588}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.WebApi.Domain", "src\Test.WebApi.Domain\Test.WebApi.Domain.csproj", "{3C485333-1EF7-4441-A3B7-1CA33FC95A4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,14 +34,9 @@ Global
 		{3C485333-1EF7-4441-A3B7-1CA33FC95A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C485333-1EF7-4441-A3B7-1CA33FC95A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C485333-1EF7-4441-A3B7-1CA33FC95A4A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0FA0C7B3-F590-46A5-9593-E7FF80CDF588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0FA0C7B3-F590-46A5-9593-E7FF80CDF588}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0FA0C7B3-F590-46A5-9593-E7FF80CDF588}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0FA0C7B3-F590-46A5-9593-E7FF80CDF588}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C3A0768E-755E-4574-B382-0727B6880CEE} = {7AA8BE7B-E296-42D8-BB58-41D53CEC63CE}
 		{3C485333-1EF7-4441-A3B7-1CA33FC95A4A} = {7AA8BE7B-E296-42D8-BB58-41D53CEC63CE}
-		{0FA0C7B3-F590-46A5-9593-E7FF80CDF588} = {7AA8BE7B-E296-42D8-BB58-41D53CEC63CE}
 	EndGlobalSection
 EndGlobal

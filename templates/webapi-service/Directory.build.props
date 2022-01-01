@@ -1,7 +1,0 @@
-<Project>
-    <PropertyGroup>
-        <LangVersion Condition="'$(DotNetVersion)'=='6.0')">10.0</LangVersion>
-        <LangVersion Condition="'$(DotNetVersion)'=='5.0')">9.0</LangVersion>
-        <TargetFramework>net(DotNetVersion)</TargetFramework>
-    </PropertyGroup>
-</Project>

@@ -21,12 +21,10 @@ namespace Microsoft.Extensions.DependencyInjection
             return services;
         }
 
-#if(use-swagger)
         public static IServiceCollection AddSwaggerServices(this IServiceCollection services)
         {
 
             return services;
         }
-#endif
     }
 }

@@ -13,16 +13,16 @@
   "preferNameDirectory": true,
   "sourceName": "DotNet.WebApi",
   "symbols":{
-    "useSwagger":{
+    "use-swagger":{
       "type":"parameter",
       "datatype": "bool",
       "description": "Enable Swagger support",
       "defaultValue":"true"
     },
-    "DotNetVersion":{
+    "dotnet-version":{
       "type":"parameter",
       "datatype": "choice",
-      "description": "Select dotnet version",
+      "description": "Select DotNet version",
       "defaultValue":"6.0",
       "choices": [
         {
@@ -31,12 +31,12 @@
         },
         {
           "choice": "5.0",
-          "description": ".Net 6"
+          "description": ".Net 5"
         }
       ],
       "replaces": "(DotNetVersion)"
     },
-    "ORM":{
+    "orm":{
       "type":"parameter",
       "datatype": "choice",
       "description": "What ORM to use",
