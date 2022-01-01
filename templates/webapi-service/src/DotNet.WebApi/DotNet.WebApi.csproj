@@ -4,9 +4,13 @@
     
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Condition="$(use-swagger)" Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+  </ItemGroup>
+
  <ItemGroup>
-  <PackageReference Condition="$(use-swagger)" Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-  <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+  <ProjectReference Include="../DotNet.WebApi.ApplicationServices/DotNet.WebApi.ApplicationServices.csproj" />
  </ItemGroup>
 
 </Project>
