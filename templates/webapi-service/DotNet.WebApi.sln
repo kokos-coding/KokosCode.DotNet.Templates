@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.WebApi.Domain", "src
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.WebApi.ApplicationServices", "src\DotNet.WebApi.ApplicationServices\DotNet.WebApi.ApplicationServices.csproj", "{0FA0C7B3-F590-46A5-9593-E7FF80CDF588}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D8FBED4B-AB69-4974-9951-1BEECD664552}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.WebApi.ApplicationServices.Tests", "tests\DotNet.WebApi.ApplicationServices.Tests\DotNet.WebApi.ApplicationServices.Tests.csproj", "{ADCAA0E4-2E83-4D25-9C90-4C6DD160CDFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,10 +44,15 @@ Global
 		{0FA0C7B3-F590-46A5-9593-E7FF80CDF588}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FA0C7B3-F590-46A5-9593-E7FF80CDF588}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FA0C7B3-F590-46A5-9593-E7FF80CDF588}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADCAA0E4-2E83-4D25-9C90-4C6DD160CDFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADCAA0E4-2E83-4D25-9C90-4C6DD160CDFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADCAA0E4-2E83-4D25-9C90-4C6DD160CDFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADCAA0E4-2E83-4D25-9C90-4C6DD160CDFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C3A0768E-755E-4574-B382-0727B6880CEE} = {7AA8BE7B-E296-42D8-BB58-41D53CEC63CE}
 		{3C485333-1EF7-4441-A3B7-1CA33FC95A4A} = {7AA8BE7B-E296-42D8-BB58-41D53CEC63CE}
 		{0FA0C7B3-F590-46A5-9593-E7FF80CDF588} = {7AA8BE7B-E296-42D8-BB58-41D53CEC63CE}
+		{ADCAA0E4-2E83-4D25-9C90-4C6DD160CDFD} = {D8FBED4B-AB69-4974-9951-1BEECD664552}
 	EndGlobalSection
 EndGlobal

@@ -17,7 +17,7 @@
 mono_crash.*
 
 # Tests folder
-[Tt]ests/
+/tests/
 
 # Build results
 [Dd]ebug/
