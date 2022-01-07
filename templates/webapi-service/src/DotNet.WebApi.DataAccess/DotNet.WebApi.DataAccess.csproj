@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+  </PropertyGroup>
+
+ <ItemGroup>
+  <PackageReference Condition="'$(use-orm)' == 'EFCore' AND '$(dotnet-version)' == '6.0'" Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.2" />
+  <PackageReference Condition="'$(use-orm)' == 'EFCore' AND '$(dotnet-version)' == '5.0'" Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.10" />
+ </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../DotNet.WebApi.Domain/DotNet.WebApi.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

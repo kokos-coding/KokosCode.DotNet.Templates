@@ -36,12 +36,36 @@
       ],
       "replaces": "(DotNetVersion)"
     },
-    "orm":{
+    "use-db":{
+      "type":"parameter",
+      "datatype": "choice",
+      "description": "What DB provider you want to use",
+      "defaultValue":"None",
+      "choices": [
+        {
+          "choice": "None",
+          "description": "Use no DataAccess"
+        },
+        {
+          "choice": "Postgres",
+          "description": "Use Postgres as default"
+        },
+        {
+          "choice": "MSSQL",
+          "description": "Use Postgres as default"
+        }
+      ]
+    },
+    "use-orm":{
       "type":"parameter",
       "datatype": "choice",
       "description": "What ORM to use",
-      "defaultValue":"EFCore",
+      "defaultValue":"None",
       "choices": [
+        {
+          "choice": "None",
+          "description": "Use no ORM"
+        },
         {
           "choice": "EFCore",
           "description": "Connect EFCore as main ORM system"

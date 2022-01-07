@@ -11,6 +11,7 @@
 
  <ItemGroup>
   <ProjectReference Include="../DotNet.WebApi.ApplicationServices/DotNet.WebApi.ApplicationServices.csproj" />
+  <ProjectReference Condition="'$(use-orm)' != '' and '$(use-db)' != ''" Include="../DotNet.WebApi.DataAccess/DotNet.WebApi.DataAccess.csproj" />
  </ItemGroup>
 
 </Project>
